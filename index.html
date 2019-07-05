@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <div style="position: fixed;bottom: 0; width: 300px;padding: 12px; background-color: #F6F8FA">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <canter>    <a id="loadMoreButton" onclick="loadAllKeys();">Load More</a></canter>
+</div>
+  <ul id="allWordsList" >
+    </ul>
+
+</div>
+
+  <div class="div1">  
+  <input type="text" class="searchBar" name="search"  placeholder="search here...">
+<br>
+<div>
+
+<div class="icon-bar">
+  <button onclick="onSearchClick();" class="btn_round"><img src="https://img.icons8.com/ios-glyphs/40/333333/search.png"></button>
+  <button onclick="speak(meaning);" class="btn_round speakBtn"><img src="https://img.icons8.com/ios-glyphs/40/333333/high-volume.png"></button>
+  <button onclick="loadAllKeys();" class="btn_round speakBtn"><img src="https://img.icons8.com/ios-glyphs/40/333333/dictionary.png"></button>
+</div>
+<p class="meaning">
+</p>
+ </div>
+  </div>
+
+  <div style="width: 100vw;">
+    <div style="float: left; width:600px; max-width: 100vw; "><img src="bg-dictionary1.png" style="width: 640px;max-width:100vw; "></div>
+    <div style="float: left; width: 40%;min-width: 300px; max-width: 100vw;padding: 4%;"> <h1>Online Dictionary</h1><h2>about</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae faucibus nisl. Proin nec purus turpis. Donec eget neque mi. Morbi placerat dignissim congue. Aenean sollicitudin diam orci, nec ullamcorper tortor ornare a. Nunc lectus nisl, maximus sed sodales quis, congue eget purus. Aenean quis tempus est. Aliquam erat volutpat. Donec vestibulum tristique scelerisque.
+
+</p>
+
+</div>
+
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyADQFeqrihiU7q0CTmJDsWZSstRAkvsj2A",
+    authDomain: "dictionary-237ee.firebaseapp.com",
+    databaseURL: "https://dictionary-237ee.firebaseio.com",
+    projectId: "dictionary-237ee",
+    storageBucket: "dictionary-237ee.appspot.com",
+    messagingSenderId: "696163020861",
+    appId: "1:696163020861:web:3a6b1b030ccfcb2a"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script type="text/javascript" src="js.js"></script>
+      
+
+</body>
+</html> 

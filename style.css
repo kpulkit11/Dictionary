@@ -1,0 +1,88 @@
+body{
+  font-family: 'Nunito', sans-serif;
+ 
+}
+.div1{
+   padding: 3% 5%;
+    max-width: 920px;
+    min-height:70vh;
+
+}
+.btn_round{
+  background:#fff;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  cursor:pointer;
+  margin: 10px;
+  padding:20px;
+}
+.searchBar{
+  padding:12px 24px;
+  background: #f6f8fa;
+  border-radius: 8px;
+  border: 0px;
+  color: #111111;
+  width:65vw;
+  box-shadow: 2px 2px #dddddd;
+  font-size: 36px;
+  margin:10px 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+.icon-bar :hover {
+  background-color: #f6f8fa;
+}
+.meaning {
+  border: 0px;
+  padding: 7% 1%;
+  
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f6f8fa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #888;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 36px;
+  padding: 12px;
+  border-radius:50%;
+}
+
+@media screen and (max-height: 400px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+  
+}
+#allWordsList{
+  margin-bottom: 50px;
+}
+#loadMoreButton,li{
+  cursor: pointer;
+
+}
